@@ -26,8 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm i node-fetch@2 --save-dev
     - run: npm install
+    - run: npm run pretest
     - run: npx jest --silent=true --coverage
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
