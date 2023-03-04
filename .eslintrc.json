@@ -1,5 +1,5 @@
 {
-  "extends": "./node_modules/gts/"
+  "extends": "./node_modules/gts/",
    "rules": {
     "import/no-extraneous-dependencies": "off",
     "@typescript-eslint/no-explicit-any": "off"
